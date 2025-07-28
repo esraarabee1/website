@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+:root {
+  --color-white-70:rgba(255, 255, 255, 0.70);
+  --color-white-solid: #FFF;
+  --color-orange-55: #CE9E4A;
+  --color-grey-89: #E3E3E3;
+  --color-grey-7:131313;
+  --color-black-solid:#000;
+  --color-grey-8987: rgba(227, 227, 227, 0.87);
+}
+
+$screens:(
+    sm:570px,
+    md:720px,
+    lg:980px,
+);
+@each $screen, $width in $screens{
+    @media screen and (min-width:$width) {
+        @for $col from 1 through 12 {
+            .col-#{$screen}-#{$col}{
+                padding-left: 16px;
+                padding-right: 16px;
+                width: calc(100% / 12 * $col);
+            }
+        }
+        
+    }
+}
+
+@mixin properties($color, $fontfamily, $fontsize, $fontweight) {
+  color: $color;
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  font-weight: $fontweight;
+}
+@mixin contentposition($display, $alignitems, $justifycontent){
+  display:$display;
+  align-items: $alignitems;
+  justify-content: $justifycontent;
+}
+/*----------HEADER---------------*/
+.header {
+  padding: 16px 80px;
+  position: sticky;
+  background: var(--color-black-81, rgba(0, 0, 0, 0.81));
+}
+
+.d-flex {
+  @include contentposition(flex,center ,space-between );
+}
+
+.header-ul {
+  list-style: none;
+  gap: 16px;
+  @include contentposition(flex,center ,0 );
+}
+
+.sign {
+  gap: 16px;
+  @include contentposition(flex,center ,start );
+}
+
+.header-ul li .header-ancor {
+  @include properties(var(--color-white-70), Montserrat, 18px, 400);
+}
+/**/
+.hero{
+  background: var(--color-black-81, rgba(0, 0, 0, 0.81));
+  padding: 200px 0 200px 0;
+}
+h1{
+    @include properties(var(--color-white-solid), Montserrat, 72px, 700);
+    text-align: center;
+}
+
+.span-hero{
+   @include properties(var(--color-orange-55), Montserrat, 18px, 600);
+   text-align: center;
+}
+.para-hero{
+   @include properties(var(--color-grey-89), Montserrat, 20px, 400);
+   text-align: center;
+}
+.start{
+  border-radius: 4px;
+  background: var(--color-grey-7, #131313);
+  box-shadow: 0 0 0 1px #FFF inset;
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  @include properties(var(--color-white-solid), Montserrat, 16px, 400);
+  text-align: center;
+}
+.join{
+  border-radius: 4px;
+background: var(--color-white-solid, #FFF);
+box-shadow: 0 0 0 0 #131313 inset;
+display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  @include properties(var(--color-grey-7), Montserrat, 16px, 500);
+  text-align: center;
+}
+.hero-anchors{
+  @include contentposition(flex,center ,center );
+  gap: 24px;
+}
+.hero-content{
+   @include contentposition(flex,center ,center );
+   flex-direction: column;
+   gap: 40px;
+   
+}
+/**/
+.service-sec {
+  background: var(--color-black-solid, #000);
+}
+
+.ourserviceheading{
+ @include properties(var(--color-white-solid), Montserrat, 48px, 700);
+}
+.para-service{
+     @include properties(var(--color-white-solid), Montserrat, 18px, 400);
+
+}
+.ul-service{
+  list-style: none;
+  @include contentposition(flex,start ,center );
+  flex-direction: column;
+  gap: 32px;
+  padding: 44px 0;
+}
+.one-serve{
+   @include contentposition(flex,center ,start );
+  gap: 18px;
+}
+.lets{
+  border-radius: 4px;
+  background: var(--color-white-solid, #FFF);
+  box-shadow: 0 0 0 0 #FFF inset;
+  padding: 16px 24px;
+  @include properties(var(--color-black-solid), Montserrat, 16px, 500);
+
+}
+.btn-lets{
+  padding-top: 80px;
+}
+.alignitems{
+  @include contentposition(flex,center ,start );
+}
+.padding{
+  padding: 80px 0 80px 40px;
+}
+
+.nameofserve{
+   @include properties(var(--color-white-solid), Montserrat, 24px, 600);
+}
+.discofserve{
+   @include properties(var( --color-grey-8987), Montserrat, 18px, 400);
+}
+.head-service{
+  @include contentposition(flex,start ,0 );
+  flex-direction: column;
+  gap:10px ;
+}
+/**/
+.partner-heading{
+  @include properties(var(--color-black-solid), Montserrat, 32px, 600);
+  @include contentposition(flex,center ,center );
+}
+.gap-32{
+  @include contentposition(flex,space-between ,center );
+  gap: 32px;
+  flex-direction: column;
+}
+.partners{
+  padding: 48px 0px;
+}
+/**/
+.Trusted{
+  background: var(--color-black-solid, #000);
+  padding: 100px 0 99.6px 0;
+}
+.Trusted-heading{
+    @include properties(var(--color-orange-55), Montserrat, 48px, 700);
+
+}
+.Trusted-para{
+    @include properties(var(--color-white-solid), Montserrat, 16px, 400);
+
+}
+.Trusted-para-2{
+      @include properties(var(--color-white-solid), Montserrat, 12px, 400);
+
+}
+.center{
+    @include contentposition(flex,center ,center );
+    flex-direction: column;
+    gap: 15px;
+}
+.gap-48{
+   @include contentposition(flex,center ,center );
+   gap: 48px;
+   padding: 24px 0px;
+}
+/**/
+.goals{
+  background: var(--color-black-solid, #000);
+  padding: 100px 0;
+}
+.title-goal{
+  @include properties(var(--color-white-solid), Montserrat, 24px, 600);
+   @include contentposition(flex,center ,center );
+}
+.para-goal{
+  @include properties(var(--color-white-solid), Montserrat, 18px, 400);
+   @include contentposition(flex,center ,center );
+}
+.somegoalsitem{
+   @include contentposition(flex,center ,center );
+   gap: 10px;
+   flex-direction: column;
+}
+.content-somegoals{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/**/
