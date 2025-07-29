@@ -26,6 +26,7 @@
   --color-white-solid: #FFF;
   --color-orange-55: #CE9E4A;
   --color-grey-89: #E3E3E3;
+  
   --color-grey-7:131313;
   --color-black-solid:#000;
   --color-grey-8987: rgba(227, 227, 227, 0.87);
@@ -251,3 +252,57 @@ display: flex;
   gap: 10px;
 }
 /**/
+.ourLearning{
+  padding: 100px 100px ;
+  background: var(--color-black-solid, #000);
+}
+.heading-learning{
+  @include properties(var(--color-grey-89), Montserrat,  48px, 700);
+}
+.para-learning{
+  @include properties(var(--color-grey-89), Montserrat,  18px, 400);
+
+}
+.learning-head{
+   @include contentposition(flex,start ,0 );
+   gap: 10px;
+   flex-direction: column;
+   padding-bottom: 22px;
+}
+
+.ourlearningitem{
+   @include contentposition(flex,0 ,0 );
+   gap: 18px;
+   flex-direction: column;
+}
+.ourlearn-img{
+  overflow: hidden;
+   
+}
+.ourlearn-img img{
+  display: block;
+  width: 100%;
+}
+.title-learn{
+    @include properties(var(--color-grey-89), Montserrat,  20px, 600);
+    border-radius: 1px;
+    padding: 6px 16px;
+    background: var(--color-grey-9210, rgba(246, 237, 221, 0.10));
+}
+.para-learn{
+  @include properties(var(--color-grey-89), Montserrat,  16px, 400);
+
+}
+.upcoming-link{
+  @include properties(var(--color-orange-55), Montserrat,  16px, 500);
+
+}
+.gap-16{
+   @include contentposition(flex,0 ,0 );
+   gap: 16px;
+   flex-direction: column;
+}
+.explore-name{
+     @include properties(var(--color-white-solid), Montserrat, 24px, 600);
+
+}

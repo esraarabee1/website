@@ -516,5 +516,88 @@ h1 {
 }
 
 /**/
+.ourLearning {
+  padding: 100px 100px;
+  background: var(--color-black-solid, #000);
+}
+
+.heading-learning {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.para-learning {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.learning-head {
+  display: flex;
+  align-items: start;
+  justify-content: 0;
+  gap: 10px;
+  flex-direction: column;
+  padding-bottom: 22px;
+}
+
+.ourlearningitem {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.ourlearn-img {
+  overflow: hidden;
+}
+
+.ourlearn-img img {
+  display: block;
+  width: 100%;
+}
+
+.title-learn {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 1px;
+  padding: 6px 16px;
+  background: var(--color-grey-9210, rgba(246, 237, 221, 0.1));
+}
+
+.para-learn {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.upcoming-link {
+  color: var(--color-orange-55);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.gap-16 {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.explore-name {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=style.css.map */
