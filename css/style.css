@@ -805,4 +805,100 @@ h4 {
   gap: 48px;
 }
 
+/**/
+.discover-service {
+  padding-top: 100px;
+  background: var(--color-black-solid, #000);
+}
+
+.discover-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.discover-content-head {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.discover-content-buttom {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.discover-content-head h3 {
+  color: var(--color-orange-55);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.discover-service-span {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.list-goals li {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.book-free {
+  color: var(--color-black-solid);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--color-white-solid, #FFF);
+  box-shadow: 0 0 0 0 #FFF inset;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 339px;
+}
+
+.gap-48col {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/**/
+.card-whatbuild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.whybuild-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */
