@@ -396,3 +396,50 @@ h4{
 .buttom-footer p{
     @include properties(var(--color-grey-85),Montserrat ,16px , 400);
 }
+
+/*-------service*/
+.why-partner{
+  padding-top: 100px;
+  background: var(--color-black-solid, #000);
+
+}
+.why-head{
+  @include contentposition(flex,center ,center);
+  flex-direction: column;
+  gap: 10px;
+
+}
+.why-content{
+  @include contentposition(flex,center ,center);
+  flex-direction: column;
+  gap: 10px;
+}
+.why-content h3{
+    @include properties(var(--color-grey-89),Montserrat ,32px , 600);
+
+}
+
+.why-content p{
+    @include properties(var(--color-grey-89),Montserrat ,16px , 400);
+
+}
+.why-img{
+  overflow: hidden;
+}
+.why-img img{
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+background: var(--color-white-15, rgba(255, 255, 255, 0.15));
+}
+.why-item{
+   @include contentposition(flex,center ,center);
+  flex-direction: column;
+  gap: 16px;
+}
+.gap-48px{
+   @include contentposition(flex,center ,center);
+  flex-direction: column;
+  gap: 48px;
+}

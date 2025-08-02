@@ -741,4 +741,68 @@ h4 {
   font-weight: 400;
 }
 
+/*-------service*/
+.why-partner {
+  padding-top: 100px;
+  background: var(--color-black-solid, #000);
+}
+
+.why-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why-content h3 {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.why-content p {
+  color: var(--color-grey-89);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.why-img {
+  overflow: hidden;
+}
+
+.why-img img {
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background: var(--color-white-15, rgba(255, 255, 255, 0.15));
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gap-48px {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+}
+
 /*# sourceMappingURL=style.css.map */
