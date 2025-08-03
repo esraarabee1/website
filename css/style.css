@@ -901,4 +901,35 @@ h4 {
   flex-direction: column;
 }
 
+/**/
+.Ready-img {
+  overflow: hidden;
+}
+
+.Ready-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.Ready-heading {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.start-p {
+  text-align: start;
+}
+
+.align-items {
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */

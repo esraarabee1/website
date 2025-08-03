@@ -507,3 +507,23 @@ background: var(--color-white-15, rgba(255, 255, 255, 0.15));
     gap: 12px;
     flex-direction: column;
 }
+/**/
+.Ready-img{
+  overflow: hidden;
+}
+.Ready-item{
+   @include contentposition(flex,start ,center);
+    gap: 15px;
+    flex-direction: column;
+}
+.Ready-heading{
+  @include properties(var(--color-white-solid), Montserrat, 32px, 600);
+
+}
+.start-p{
+  text-align: start;
+}
+.align-items{
+  padding: 48px;
+  @include contentposition(flex,center ,space-between);
+}
