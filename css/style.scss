@@ -445,7 +445,7 @@ background: var(--color-white-15, rgba(255, 255, 255, 0.15));
 }
 /**/
 .discover-service{
-   padding-top: 100px;
+  padding-top: 100px;
   background: var(--color-black-solid, #000);
 }
 .discover-content{
@@ -526,4 +526,49 @@ background: var(--color-white-15, rgba(255, 255, 255, 0.15));
 .align-items{
   padding: 48px;
   @include contentposition(flex,center ,space-between);
+}
+
+/**/
+.Interactive{
+  background-image: url("../imgs/Containercourse.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 64px;
+  padding-top:100px ;
+}
+.select-course{
+ padding: 70px;
+ background: var(--color-black-solid, #000);
+}
+.Interactive-h{
+  @include properties(var(--color-white-solid), Montserrat, 48px, 700);
+
+}
+.Interactive-p{
+  @include properties(var(--color-grey-89), Montserrat, 18px, 400);
+
+}
+.gap-11{
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.course-content{
+  @include contentposition(flex,start ,center);
+  flex-direction: column;
+  gap: 4px;
+
+}
+.course-content h3{
+    @include properties(var(--color-white-solid), Montserrat, 24px, 600);
+
+}
+.price-course{
+      @include properties(var(--color-orange-55), Montserrat, 20px, 600);
+
+}
+.course-content p{
+    @include properties(var(--color-grey-89), Montserrat, 16px, 400);
+
 }
