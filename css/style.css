@@ -996,4 +996,19 @@ h4 {
   font-weight: 400;
 }
 
+/**/
+.events-available {
+  padding: 64px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-available h2 {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */

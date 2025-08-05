@@ -572,3 +572,14 @@ background: var(--color-white-15, rgba(255, 255, 255, 0.15));
     @include properties(var(--color-grey-89), Montserrat, 16px, 400);
 
 }
+
+/**/
+.events-available{
+  padding: 64px 40px;
+  @include contentposition(flex,center ,center);
+
+}
+.events-available h2{
+  @include properties(var(--color-white-solid), Montserrat, 48px, 700);
+
+}
