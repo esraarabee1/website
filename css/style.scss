@@ -583,3 +583,78 @@ background: var(--color-white-15, rgba(255, 255, 255, 0.15));
   @include properties(var(--color-white-solid), Montserrat, 48px, 700);
 
 }
+.properties{
+  border-radius: 8px;
+  background: var(--color-white-4, rgba(255, 255, 255, 0.04));
+  @include contentposition(flex,center ,0);
+  gap: 35px;
+  max-width: 1440px;
+  max-height: 684px;
+
+}
+.our-contact-img{
+ overflow: hidden;
+}
+.our-contact-img img{
+  object-fit: cover;
+}
+.contact-item h2{
+  @include properties(var(--color-white-solid), Montserrat, 48px, 700);
+
+}
+.canfind-in{
+   @include contentposition(flex,start ,center);
+   flex-direction: column;
+   gap: 24px;
+   padding-top: 24px;
+}
+.canfind-in h3{
+  @include properties(var(--color-white-solid), Montserrat, 20px, 600);
+
+}
+.text-start{
+  @include contentposition(flex,center ,start);
+  gap: 5px;
+
+}
+.find-in{
+  list-style: none;
+  @include contentposition(flex,start ,center);
+  gap: 15px;
+  padding: 23.295px 0 24px 0;
+  flex-direction: column;
+}
+.position{
+  @include contentposition(flex,center ,center);
+  gap: 24px;
+  padding: 47px 0;
+  flex-direction: column;
+}
+.send-head{
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+.text{
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.20));
+  padding: 15px 60px;
+}
+.phone{
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.20));
+  padding: 15px 218px;
+}
+.text-area{
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.20));
+  min-height: var(--height-55, 55px);
+  padding: 16.5px 218px 247.44px;
+}
+.gap-inputs{
+  @include contentposition(flex,center ,center);
+  gap: 24px;
+}
