@@ -1011,4 +1011,107 @@ h4 {
   font-weight: 700;
 }
 
+.properties {
+  border-radius: 8px;
+  background: var(--color-white-4, rgba(255, 255, 255, 0.04));
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 35px;
+  max-width: 1440px;
+  max-height: 684px;
+}
+
+.our-contact-img {
+  overflow: hidden;
+}
+
+.our-contact-img img {
+  object-fit: cover;
+}
+
+.contact-item h2 {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.canfind-in {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+
+.canfind-in h3 {
+  color: var(--color-white-solid);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.find-in {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+  padding: 23.295px 0 24px 0;
+  flex-direction: column;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 47px 0;
+  flex-direction: column;
+}
+
+.send-head {
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+
+.text {
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.2));
+  padding: 15px 60px;
+}
+
+.phone {
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.2));
+  padding: 15px 218px;
+}
+
+.text-area {
+  border-radius: 4px;
+  border: var(--stroke-weight-1, 1px) solid var(--color-grey-45, #737373);
+  background: var(--color-grey-9220, rgba(246, 237, 221, 0.2));
+  min-height: var(--height-55, 55px);
+  padding: 16.5px 218px 247.44px;
+}
+
+.gap-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
